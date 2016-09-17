@@ -29,6 +29,11 @@
 
 }
 
+.logout {
+	position: absolute;
+	right: 0px;
+}
+
 .patient-list {
 
 	position: relative;
