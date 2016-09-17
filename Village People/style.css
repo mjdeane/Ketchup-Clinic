@@ -1,0 +1,85 @@
+.jumbotron {
+
+	width: 1000px;
+	height: 117px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("background-kids-small.jpg");
+	color: #ffffff;
+	border-radius: 15px;
+	position: relative;
+	top: 23px;
+
+}
+
+#title {
+
+	width: 800px;
+	position: relative;
+	left: 25px;
+	top: -40px;
+
+}
+
+.page {
+
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.input-group {
+
+	width: 500px;
+
+}
+
+#gender-input {
+
+	position: relative;
+	top: 10px;
+
+}
+
+#hn-input {
+
+	position: relative;
+	top: 20px;
+
+}
+
+.gender-input-buttons {
+
+	position: relative;
+	left: 10px;
+
+}
+
+.vitals {
+
+	position: relative;
+	top: 40px;
+
+}
+
+#heart-rate-input {
+
+	position: relative;
+	top: 10px;
+
+}
+
+#temperature-input {
+
+	position: relative;
+	top: 20px;
+
+}
+
+#submit-button {
+
+	position: relative;
+	top: 70px;
+
+}
