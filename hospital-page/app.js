@@ -1,7 +1,14 @@
 $(document).ready(function() {
-	$('#patient-dropdown').change(function() {
-		console.log($('#patient-dropdown').val());
 
+	$('#instance-list').hide();
+	$('#patient-info').hide();
+
+	$('#patient-dropdown').change(function() {
+		$('#instance-list').show();
 	});
 
+	$('#instance-list td').click(function() {
+		$('#patient-info').show();
+	});
+	
 });
