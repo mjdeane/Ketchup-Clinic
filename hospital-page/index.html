@@ -1,106 +1,116 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Ketchup Clinic</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="icon" type="img/ico" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+	<title>Ketchup Clinic</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="icon" type="img/ico" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo|Francois+One" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
 
-	</head>
+<nav class="navbar navbar-default">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="#">Ketchup Clinic</a>
+	</div>
+	<a href="../Main Page/index.html" class="logout">
+		<p>Logout       <i class="fa fa-sign-out" aria-hidden="true"></i></p>
+	</a>
+</nav>
+<body>
 
-	<body>
-		<div class="jumbotron">
-			<div id="title">
-				<h1>Ketchup Clinic</h1>
+<div class="page">
+	<div class="main-container">
+		<div class="main-header">Hospital Page</div>
+		<div class="patient-list">
+			<span class="small-heading">Select Patient:</span>
+			<select id="patient-dropdown" class="dropdown-content">
+				<option selected disabled></option>
+				<option href="#">Pascale Walters</option>
+				<option href="#">Sally Moon</option>
+				<option href="#">Matthew Deane</option>
+				<option href="#">Sean Lazaro</option>
+				<option href="#">Dipika Sikka</option>
+				<option href="#">Ai Lin Su</option>
+			</select>
+		</div>
+
+		<div class="instance-list" id="instance-list">
+			<span class="small-heading">Select Session:</span>
+			<table class="instance-table" id="instance-table">
+				<tr>
+					<th style="width: 200px;" class="col-heading">Dates</th>
+					<th style="width: 500px;" class="col-heading">Description</th>
+					<th style="width: 100px;" class="col-heading">Status</th>
+				</tr>
+				<tr>
+					<td>September 17</td>
+					<td>Lorem dim sum Taro cake Deep fried pumpkin and egg-yolk ball</td>
+					<td class="text-primary"><i class="fa fa-file" aria-hidden="true"></i> New</td>
+				</tr>
+				<tr>
+					<td>September 17</td>
+					<td>Lorem dim sum Taro cake Deep fried pumpkin and egg-yolk ball</td>
+					<td class="text-primary"><i class="fa fa-file" aria-hidden="true"></i> New</td>
+				</tr>
+				<tr>
+					<td>September 17</td>
+					<td>Lorem dim sum Taro cake Deep fried pumpkin and egg-yolk ball</td>
+					<td class="text-warning"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Needs Response</td>
+				</tr>
+				<tr>
+					<td>September 17</td>
+					<td>Lorem dim sum Taro cake Deep fried pumpkin and egg-yolk ball</td>
+					<td class="text-success"><i class="fa fa-check-circle" aria-hidden="true"></i> Responded</td>
+				</tr>
+				<tr>
+					<td>September 17</td>
+					<td>Lorem dim sum Taro cake Deep fried pumpkin and egg-yolk ball</td>
+					<td class="text-success"><i class="fa fa-check-circle text-success" aria-hidden="true"></i> Responded</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="patient-info" id="patient-info">
+			<div class="sub-header">
+				Session Information
+			</div>
+			<div id="instance-header">
+				<div class="row">
+					<span class="small-heading col-md-2">
+						Date:
+					</span>
+					<span class="col-md-10">September 17</span>
+				</div>
+				<div class="row">
+					<span class="small-heading col-md-2">
+						Description:
+					</span>
+					<span class="col-md-10">Lorem ipsum</span>
+				</div>
+				<hr id="instance-hr">
+			</div>
+			<div id="instance-info">
+				<div class="col-md-6">
+					Patient Info:<br>
+					Name: Bob<br>
+					Age: 10<br>
+					Gender: M<br>
+					ID: 10<br>
+				</div>
+				<div class="col-md-6">
+					Vitals:<br>
+					Heart Rate: 10<br>
+					Blood Pressure: 69<br>
+					Temperature: 2<br>
+				</div>
 			</div>
 		</div>
 
-		<div class="container page">
+	</div>
 
-			<div class="row">
-				<div class="col-md-6">
-					<h2>Hospital Page</h2>
-				</div>
-				<div class="col-md-6">
-					<a href="../Main Page/index.html" class="logout">Logout</a>
-				</div>
-			</div>
-
-			<div class="patient-list">
-				Select Patient:
-				<select id="patient-dropdown" class="dropdown-content">
-					<option selected disabled></option>
-				    <option href="#">Pascale Walters</option>
-				    <option href="#">Sally Moon</option>
-				    <option href="#">Matthew Deane</option>
-				    <option href="#">Sean Lazaro</option>
-				    <option href="#">Dipika Sikka</option>
-				    <option href="#">Ai Lin Su</option>
-			  	</select>
-			</div>
-
-			<div class="instance-list" id="instance-list">
-				Select Instance:
-				<table id="instance-table">
-					<tr>
-						<th style="width: 200px;">Dates</th>
-						<th style="width: 500px;">Description</th>
-						<th style="width: 100px;">Response</th>
-					</tr>
-					<tr>
-						<td>September 17</td>
-						<td>Lorem dim sum Taro cake Deep fried pumpkin and egg-yolk ball</td>
-						<td><input type="checkbox" style="margin-left: auto; margin-right: auto"></td>
-					</tr>
-					<tr>
-						<td>September 17</td>
-						<td>Lorem dim sum Taro cake Deep fried pumpkin and egg-yolk ball</td>
-						<td><input type="checkbox" style="margin-left: auto; margin-right: auto"></td>
-					</tr>
-					<tr>
-						<td>September 17</td>
-						<td>Lorem dim sum Taro cake Deep fried pumpkin and egg-yolk ball</td>
-						<td><input type="checkbox" style="margin-left: auto; margin-right: auto"></td>
-					</tr>
-					<tr>
-						<td>September 17</td>
-						<td>Lorem dim sum Taro cake Deep fried pumpkin and egg-yolk ball</td>
-						<td><input type="checkbox" style="margin-left: auto; margin-right: auto"></td>
-					</tr>
-					<tr>
-						<td>September 17</td>
-						<td>Lorem dim sum Taro cake Deep fried pumpkin and egg-yolk ball</td>
-						<td><input type="checkbox" style="margin-left: auto; margin-right: auto"></td>
-					</tr>
-				</table>
-			</div>
-
-			<div class="row" id="patient-info">
-				<div class = "row" id="instance-header">
-						Date: September 17<br>
-						Description: Lorem ipsum
-					<hr id="instance-hr">
-				</div>
-				<div class = "row" id="instance-info">
-					<div class="col-md-6">
-						Patient Info:<br>
-						Name: Bob<br>
-						Age: 10<br>
-						Gender: M<br>
-						ID: 10<br>
-					</div>
-					<div class="col-md-6">	
-						Vitals:<br>
-						Heart Rate: 10<br>
-						Blood Pressure: 69<br>
-						Temperature: 2<br>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="app.js"></script>
-	</body>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
 </html>
