@@ -40,6 +40,12 @@ table{
 	top: 10px;
 
 }
+.instance-list{
+	display: none;
+}
+.session-info{
+	display: none;
+}
 .patient-info{
 	margin-top:30px;
 }

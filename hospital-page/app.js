@@ -13,11 +13,6 @@ $(document).ready(function() {
 			$('#patient-dropdown').append(element);
 		}
 	}
-	
-
-	$('#instance-list').hide();
-	$('#patient-info').hide();
-
 
 	$('#patient-dropdown').change(function() {
 		var chosenName = $('#patient-dropdown').val();
@@ -45,7 +40,8 @@ $(document).ready(function() {
 			"#patient-id",
 			"#patient-hr",
 			"#patient-bp",
-			"#patient-temp"];
+			"#patient-temp",
+			"#patient-notes"];
 
 		for(var i = 0; i < idArr.length; i+= 1){
 			startIndex = valsArr[i].indexOf("=");
@@ -69,12 +65,16 @@ $(document).ready(function() {
 			$(idArr[i]).text(val);
 		}
 		
-		$('#instance-list').show();
+		$('.instance-list').css("display", "inline");
 		
 	});
 
-	$('#instance-list td').click(function() {
-		$('#patient-info').show();
+	$('.instance-list td').click(function() {
+		$('.session-info').css("display", "inline");
+	});
+
+	$('#submit-button').click(function() {
+		$('#submit-button').text("Submitted");
 	});
 
 });

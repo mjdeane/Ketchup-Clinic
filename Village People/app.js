@@ -12,13 +12,15 @@ $(document).ready(function() {
 		var bp = $("[aria-describedby='blood-pressure-addon']").val();
 		var hr = $("[aria-describedby='heart-rate-addon']").val();
 		var temp = $("[aria-describedby='temperature-addon']").val();
+		var notes = $("#patient-notes-input").val();
 
 		var d = new Date();
 		var date = d.toDateString();
 		key = name + date;
 
 		value = "Name="+name+";Age="+age+";Gender="+gender+";Id="+hn+
-			";BloodPressure="+bp+";HeartRate="+hr+";Temperature="+temp;
+			";BloodPressure="+bp+";HeartRate="+hr+";Temperature="+temp+
+			";Notes="+notes;
 
 		localStorage.setItem(key, value);
 
@@ -40,6 +42,9 @@ $(document).ready(function() {
 		else{
 			localStorage.setItem(name, date);
 		}
+
+		$('#submit-button').text("Submitted");
+
 	});
 
 });
