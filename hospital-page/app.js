@@ -78,4 +78,8 @@ $(document).ready(function() {
 		$('#patient-info').show();
 	});
 
+	$('#submit-button').click(function() {
+		$('#submit-button').text("Submitted");
+	});
+
 });

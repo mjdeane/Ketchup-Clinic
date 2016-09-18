@@ -42,6 +42,9 @@ $(document).ready(function() {
 		else{
 			localStorage.setItem(name, date);
 		}
+
+		$('#submit-button').text("Submitted");
+
 	});
 
 });
