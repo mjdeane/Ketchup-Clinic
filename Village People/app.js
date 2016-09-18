@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 		value = "Name="+name+";Age="+age+";Gender="+gender+";Id="+hn+
 			";BloodPressure="+bp+";HeartRate="+hr+";Temperature="+temp+
-			";Notes="+notes;
+			";Notes="+notes+";Response=";
 
 		localStorage.setItem(key, value);
 

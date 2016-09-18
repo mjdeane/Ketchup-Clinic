@@ -75,6 +75,21 @@ $(document).ready(function() {
 
 	$('#submit-button').click(function() {
 		$('#submit-button').text("Submitted");
+
+		//hard-coded to use today's profile for now
+		var name = $('#patient-dropdown').val();
+		var d = new Date();
+		var date = d.toDateString();
+
+		var key = name + date;
+		var value = localStorage.getItem(key);
+		var response = $("#doctor-response").val();
+
+		var startIndex = value.indexOf("Response=");
+		value = value.substring(0,startIndex);
+		value = value + "Response=" + response;
+
+		localStorage.setItem(key, value);
 	});
 
 });
