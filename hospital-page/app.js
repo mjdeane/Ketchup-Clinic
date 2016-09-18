@@ -45,7 +45,8 @@ $(document).ready(function() {
 			"#patient-id",
 			"#patient-hr",
 			"#patient-bp",
-			"#patient-temp"];
+			"#patient-temp",
+			"#patient-notes"];
 
 		for(var i = 0; i < idArr.length; i+= 1){
 			startIndex = valsArr[i].indexOf("=");
