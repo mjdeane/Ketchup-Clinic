@@ -4,56 +4,50 @@
 	<title>Ketchup Clinic</title>
 	<link rel="icon" type="img/ico" href="favicon.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Exo|Francois+One" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="app.js"></script>
 </head>
-
-<body>
-	<div class="jumbotron"> 
-		<div id="title"> <h1>Ketchup Clinic</h1> </div> 
+<nav class="navbar navbar-default">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="#">Ketchup Clinic</a>
 	</div>
-
-	<div class="container page">
-
-		<div class="row">
-			<div class="col-md-6">
-				<h2>Client</h2>
-			</div>
-			<div class="col-md-6">
-				<a href="../Main Page/index.html" class="logout">Logout</a>
-			</div>
-		</div>
-
-		<div class="personal-info">
-
-			<h4 class="setup-title">Personal Information</h4>
-
+	<div>
+		<a href="../Main Page/index.html" class="logout">
+			<p>Logout       <i class="fa fa-sign-out" aria-hidden="true"></i></p>
+		</a>
+	</div>
+</nav>
+<body>
+<div class="page">
+	<div class="main-container">
+		<div class="main-header">Medical Checkup</div>
+		<div class="patient-list">
+			<div class="session-heading">Personal Information:</div>
 			<div class="input-group" id="name-input">
-	  			<span class="input-group-addon" id="name-addon">Name</span>
-	  			<input type="text" class="form-control" aria-describedby="name-addon">
+				<span class="input-group-addon" id="name-addon">Name</span>
+				<input type="text" class="form-control" aria-describedby="name-addon">
 			</div>
-
 			<div class="input-group" id="age-input">
-	  			<span class="input-group-addon" id="age-addon">Age</span>
-	  			<input type="text" class="form-control" aria-describedby="age-addon">
+				<span class="input-group-addon" id="age-addon">Age</span>
+				<input type="text" class="form-control" aria-describedby="age-addon">
 			</div>
-
 			<div class="input-group" id="gender-input">
-	  			<span class="input-group-addon" id="gender-addon">Gender</span>
-	  			<div class="gender-input-buttons">
-	  				<input type='radio' name="gender" value="male" checked="checked"> Male
-	  				<input type='radio' name="gender" value="female"> Female
-	  			</div>
+				<span class="input-group-addon" id="gender-addon">Gender</span>
+				<div class="gender-input-buttons">
+					<input type='radio' name="gender" value="male" checked="checked"> Male
+					<input type='radio' name="gender" value="female"> Female
+				</div>
 			</div>
-
 			<div class="input-group" id="hn-input">
-	  			<span class="input-group-addon" id="hn-addon">Healthcare Number</span>
-	  			<input type="text" class="form-control" aria-describedby="hn-addon">
+				<span class="input-group-addon" id="hn-addon">Healthcare Number</span>
+				<input type="text" class="form-control" aria-describedby="hn-addon">
 			</div>
-
 		</div>
-
-		<div class="vitals">
-			<h4 class="vitals-title">Vitals</h4>
+		<div class="patient-list">
+			<div class="session-heading">Vitals Record</div>
 			<div class="input-group blood-pressure" id="blood-pressure-input">
 				<span class="input-group-addon" id="blood-pressure-addon1">Blood Pressure</span>
 				<input type="text" class="form-control blood-pressure-text-input" aria-describedby="blood-pressure-addon">
@@ -70,13 +64,16 @@
 				<span class="input-group-addon" id="temperature-addon2">&deg;C</span>
 			</div>
 		</div>
-
-		<div class="submit-button">
-			<button class="btn btn-default" id="submit-button">Submit</button>
+		<div class="patient-list">
+			<div class="session-heading">Medical Concerns</div>
+			<div class="input-group">
+				<textarea class="form-control" rows="10"></textarea>
+			</div>
 		</div>
-
-		<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="app.js"></script>
+		<div class="submit-button pull-right">
+			<button class="btn btn-danger btn-md" id="submit-button">Submit</button>
+		</div>
 	</div>
+</div>
 </body>
 </html>

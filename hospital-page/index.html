@@ -22,21 +22,20 @@
 
 <div class="page">
 	<div class="main-container">
-		<div class="main-header">Hospital Page</div>
+		<div class="main-header">Physician's Dashboard</div>
 		<div class="patient-list">
 			<span class="small-heading">Select Patient:</span>
 			<select id="patient-dropdown" class="dropdown-content">
 				<option selected disabled></option>
 			</select>
 		</div>
-
 		<div class="instance-list" id="instance-list">
 			<span class="small-heading">Select Session:</span>
 			<table class="instance-table" id="instance-table">
 				<tr>
-					<th style="width: 200px;" class="col-heading">Dates</th>
-					<th style="width: 500px;" class="col-heading">Description</th>
-					<th style="width: 100px;" class="col-heading">Status</th>
+					<th style="width: 200px;" class="col-heading row-heading">Dates</th>
+					<th style="width: 500px;" class="col-heading row-heading">Description</th>
+					<th style="width: 100px;" class="col-heading row-heading">Status</th>
 				</tr>
 				<tr class="row-hover">
 					<td>September 17</td>
@@ -65,14 +64,11 @@
 				</tr>
 			</table>
 		</div>
-
 		<div class="session-info" id="patient-info">
 			<div class="sub-header">
 				Session Information
 			</div>
-
 			<div class="session-card">
-
 				<div>
 					<div class="row">
 						<span class="small-heading col-md-3">
@@ -142,7 +138,7 @@
 					</div>
 					<div class="row">
 						<span class="small-heading col-md-3">
-							Medical :
+							Medical Concern:
 						</span>
 						<span class="col-md-9">Severe stomach pain and fever. Lack of appetite.</span>
 					</div>
