@@ -24,17 +24,24 @@
 		</div>
 
 		<div class="personal-info">
+
 			<h4 class="setup-title">Personal Information</h4>
+
 			<div class="input-group" id="name-input">
 	  			<span class="input-group-addon" id="name-addon">Name</span>
 	  			<input type="text" class="form-control" aria-describedby="name-addon">
 			</div>
 
+			<div class="input-group" id="age-input">
+	  			<span class="input-group-addon" id="age-addon">Age</span>
+	  			<input type="text" class="form-control" aria-describedby="age-addon">
+			</div>
+
 			<div class="input-group" id="gender-input">
 	  			<span class="input-group-addon" id="gender-addon">Gender</span>
 	  			<div class="gender-input-buttons">
-	  				<input type="radio" id="male"> Male
-	  				<input type="radio" id="female"> Female
+	  				<input type='radio' name="gender" value="male" checked="checked"> Male
+	  				<input type='radio' name="gender" value="female"> Female
 	  			</div>
 			</div>
 
@@ -67,6 +74,9 @@
 		<div class="submit-button">
 			<button class="btn btn-default" id="submit-button">Submit</button>
 		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="app.js"></script>
 	</div>
 </body>
 </html>

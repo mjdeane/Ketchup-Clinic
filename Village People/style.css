@@ -40,17 +40,24 @@
 
 }
 
-#gender-input {
+#age-input {
 
 	position: relative;
 	top: 10px;
 
 }
 
-#hn-input {
+#gender-input {
 
 	position: relative;
 	top: 20px;
+
+}
+
+#hn-input {
+
+	position: relative;
+	top: 30px;
 
 }
 
