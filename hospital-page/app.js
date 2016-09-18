@@ -51,6 +51,21 @@ $(document).ready(function() {
 			startIndex = valsArr[i].indexOf("=");
 			startIndex += 1;
 			var val = valsArr[i].substring(startIndex, valsArr[i].length);
+			
+			switch(i){
+				case 4:
+					val += " BPM";
+					break;
+				case 5:
+					val += " mmHg";
+					break;
+				case 6:
+					val += " \xB0C";
+					break;
+				default:
+					break;
+			}
+
 			$(idArr[i]).text(val);
 		}
 		
