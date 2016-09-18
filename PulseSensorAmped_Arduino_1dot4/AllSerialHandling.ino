@@ -25,6 +25,7 @@ void serialOutputWhenBeatHappens(){
     Serial.print("  ");
     lcd.clear();
     lcd.setCursor(0,0);
+    lcd.print("Heart Rate");
     lcd.setCursor(0,1);
     lcd.print(BPM);
     lcd.print(" (BPM)");
