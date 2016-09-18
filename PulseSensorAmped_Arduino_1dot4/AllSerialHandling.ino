@@ -1,3 +1,5 @@
+/* This code was originally found on http://www.pulsesensor.com and 
+http://playground.arduino.cc/ComponentLib/Thermistor. , then modified by our team*/
 
 //////////
 /////////  All Serial Handling Code, 
@@ -23,11 +25,9 @@ void serialOutputWhenBeatHappens(){
     Serial.print("  ");
     lcd.clear();
     lcd.setCursor(0,0);
-    lcd.print("BPM");
     lcd.setCursor(0,1);
     lcd.print(BPM);
-    delay(1000);
-
+    lcd.print(" (BPM)");
  } else{
         sendDataToSerial('B',BPM);   // send heart rate with a 'B' prefix
         sendDataToSerial('Q',IBI);   // send time between beats with a 'Q' prefix

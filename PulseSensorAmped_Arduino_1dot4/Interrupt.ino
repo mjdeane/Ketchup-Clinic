@@ -1,5 +1,5 @@
-
-
+/* This code was originally found on http://www.pulsesensor.com and 
+http://playground.arduino.cc/ComponentLib/Thermistor. , then modified by our team*/
 
 volatile int rate[10];                    // array to hold last ten IBI values
 volatile unsigned long sampleCounter = 0;          // used to determine pulse timing
