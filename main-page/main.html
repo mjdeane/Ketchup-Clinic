@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src= "../libraries/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<link rel="stylesheet" href="../libraries/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Handlee|News+Cycle|Antic|Pavanam|Poppins" rel="stylesheet">
+		<script>
+			$(function(){
+				$("#importFiles").load("../input-files/import.html");
+				$("#footer").load("../input-files/footer.html");
+			});
+
+		</script>
+		<div id="importFiles"></div>
+	</head>
+	<body>
+	<div class="wrapper">
+		<nav class="navbar navbar-fixed-top nav-main">
+			<ul class="nav navbar-nav pull-right">
+				<li class="nav-item active nav-moon">
+					<a class="nav-link moon-nav pull-left" href="../main-page/main.html"><img src="../images/moon-icon.png"></a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav pull-right">
+				<li class="nav-item">
+					<a class="nav-link" href="../projects-page/projects.html">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../skills-page/skills.html">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../experience-page/experience.html">Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../contacts-page/contacts.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<nav class="navbar navbar-default main-image image">
+			<img src="../images/main-background.jpg">
+		</nav>
+		<div class="sally-intro row">
+			<div class="sally-image col-md-4">
+				<img class= "image" src="../images/sally-picture.jpg">
+			</div>
+			<div class="col-md-8">
+				<p class="sub-heading">hello!</p>
+				<p class="text">I'm Sally Moon, an aspiring biomedical engineer from University of Waterloo.</p>
+				<br>
+				<p class="text">I love to explore unexplored places, fancy ridiculous ideas, </p>
+				<p class="text">fiddle with new technology and photograph every moment of it.</p>
+				<br>
+				<p class="text">Nice to meet you!</p>
+			</div>
+
+		</div>
+		<div class="sally-highlights">
+			<div class="main-heading padding-bottom">
+				<p>- Highlights -</p>
+			</div>
+			<div class="row padded-section padding-bottom">
+				<div class="col-md-3 icon-heading">
+					<img class ="row padding-bottom" src="../images/software-icon.png">
+					<span class="row">FullStack Developer</span>
+				</div>
+				<div class="col-md-3 icon-heading">
+					<img class ="row padding-bottom" src="../images/hardware-icon.png">
+					<span class="row">Hardware Enthusiast</span>
+				</div>
+				<div class="col-md-3 icon-heading">
+					<img class ="row padding-bottom" src="../images/research-icon.png">
+					<span class="row">Creative Researcher</span>
+				</div>
+				<div class="col-md-3 icon-heading">
+					<img class ="row padding-bottom" src="../images/leader-icon.png">
+					<span class="row">Approachable Leader</span>
+				</div>
+
+			</div>
+			<div class="row padded-section">
+				<div class="col-md-3 icon-heading">
+					<img class ="row padding-bottom" src="../images/global-icon.png">
+					<span class="row">Passion for Improving Global Healthcare</span>
+				</div>
+				<div class="col-md-3 icon-heading">
+					<img class ="row padding-bottom" src="../images/aesthetics-icon.png">
+					<span class="row">Eye for Aesthetics</span>
+				</div>
+				<div class="col-md-3 icon-heading">
+					<img class ="row padding-bottom" src="../images/curious-icon.png">
+					<span class="row">Curious Learner</span>
+				</div>
+				<div class="col-md-3 icon-heading">
+					<img class ="row padding-bottom" src="../images/optimistic-icon.png">
+					<span class="row">Optimistic Thinker</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="footer" class="main-footer"></div>
+	</body>
+</html>
