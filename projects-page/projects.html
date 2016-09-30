@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src= "../libraries/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="../libraries/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Handlee|News+Cycle|Antic|Pavanam|Poppins" rel="stylesheet">
+    <script>
+        $(function(){
+            $("#importFiles").load("../input-files/import.html");
+            $("#footer").load("../input-files/footer.html");
+        });
+
+    </script>
+    <div id="importFiles"></div>
+</head>
+<body>
+<div class="wrapper">
+    <nav class="navbar navbar-fixed-top nav-projects">
+        <ul class="nav navbar-nav pull-right">
+            <li class="nav-item active nav-moon">
+                <a class="nav-link moon-nav pull-left" href="../main-page/main.html"><img src="../images/moon-icon.png"></a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+            <li class="nav-item">
+                <a class="nav-link" href="../projects-page/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../skills-page/skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../experience-page/experience.html">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../contacts-page/contacts.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navbar navbar-default projects-image image">
+        <img src="../images/main-background.jpg">
+    </nav>
+    <div class="sally-intro row">
+        <div class="sally-image col-md-4">
+            <img class= "image" src="../images/sally-picture.jpg">
+        </div>
+
+    </div>
+    <div class="sally-highlights">
+        <div class="main-heading padding-bottom">
+            <p>- Highlights -</p>
+        </div>
+    </div>
+</div>
+<div id="footer" class="projects-footer"></div>
+</body>
+</html>
